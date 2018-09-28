@@ -11,7 +11,7 @@
 				<thead>
 					<tr>
 						<th>#</th>
-						<th>NAME</th>
+						<th>NAME</th> 
 						<th></th>
 					</tr>
 				</thead>
