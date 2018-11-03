@@ -14,7 +14,7 @@
 
 	@foreach($posts as $post)
 		<div class="col-md-6">
-			<div class="card" style="width: 34rem;">
+			<div class="card" style="width: 100%;">
 				<img class="card-img-top" src="{{ asset('images/' . $post->image) }}">
 				<div class="card-body">
 					<h4 class="card-title">{{ $post->title }}</h4>
