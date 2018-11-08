@@ -27,7 +27,7 @@
                 <div class="col-lg-4 triplet">
                     <img src="{{ asset('images/' . $post->image) }}" alt="140x140" class="rounded-circle" width="140" height="140">
                     <h2>{{ $post->title }}</h2>
-                    <p style="font-size: 14px;"><i class="far fa-calendar-alt" style="color: grey; margin-right: 5px;"></i>{{ date('F n, Y' ,strtotime($post->created_at)) }}</p>
+                    <p style="font-size: 14px;"><i class="far fa-calendar-alt" style="color: grey; margin-right: 5px;"></i>{{ date('M j, Y' ,strtotime($post->created_at)) }}</p>
                     <p>{{ substr(strip_tags($post->body), 0, 200) }}{{ strlen(strip_tags($post->body)) > 200 ? "..." : "" }}</p>
                     <a href="{{ route('blog.single', $post->slug) }}" class="btn btn-light btn-lg">Read More</a>
                 </div>

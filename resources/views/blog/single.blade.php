@@ -24,7 +24,7 @@
 						<img src="{{ "https://www.gravatar.com/avatar/" . md5(strtolower(trim($comment->email))) . "?s=50&d=wavatar" }}" class="author-image">
 						<div class="author-name">
 							<h5>{{ $comment->name }}</h5>
-							<p class="author-time">{{ date('F nS, Y - g:i A' ,strtotime($comment->created_at)) }}</p>
+							<p class="author-time">{{ date('M j, Y - g:i A' ,strtotime($comment->created_at)) }}</p>
 						</div>
 					</div>
 
